@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Identity Reset Protocol | Career Talk With Chidinma</title>
+<style>
+  /* ===== Design rules: white bg, solid hex colors, system fonts, mobile-first ===== */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #FFFFFF;
+    font-family: Roboto, Lato, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 800px; margin: 0 auto; padding: 0 18px; }
+  h1, h2, h3 { color: #000000; line-height: 1.25; }
+  p { margin: 0 0 20px; }
+  em { font-style: italic; color: #555555; }
+  strong { color: #000000; }
+
+  /* ===== Section 1: Header banner ===== */
+  .banner { background: #0B6E4F; padding: 26px 18px; text-align: center; }
+  .banner .brand { color: #FFFFFF; font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
+  .banner .tagline { color: #FDF3E3; font-size: 14px; margin-top: 4px; }
+
+  /* ===== Headline block ===== */
+  .headline-block { padding: 34px 0 8px; }
+  .headline-block h1 { font-size: 30px; margin-bottom: 14px; }
+  .byline { font-size: 14px; color: #666666; margin-bottom: 28px; }
+
+  /* ===== Image placeholders ===== */
+  .img-placeholder {
+    border: 2px dashed #B9AE9C;
+    background: #FDFBF7;
+    color: #8A7E6A;
+    text-align: center;
+    padding: 24px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 0 0 30px;
+  }
+
+  /* ===== CTA buttons ===== */
+  .cta-btn {
+    display: block;
+    width: 100%;
+    background: #0B6E4F;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin: 10px 0 34px;
+    border: 0;
+    cursor: pointer;
+  }
+  .cta-btn:hover { background: #095C42; }
+  .cta-note { text-align: center; font-size: 13px; color: #666666; margin: -26px 0 34px; }
+
+  /* ===== Promise ===== */
+  .promise {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin: 34px 0 30px;
+  }
+
+  /* ===== Contents list ===== */
+  ul.contents { margin: 0 0 30px 22px; }
+  ul.contents li { margin-bottom: 16px; }
+
+  /* ===== Testimonial cards ===== */
+  .testi-card {
+    background: #FAF7F2;
+    border: 1px solid #E5DED2;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+  .testi-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #0B6E4F; color: #FFFFFF;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 15px; flex-shrink: 0;
+  }
+  .testi-meta { font-size: 14px; color: #333333; }
+  .testi-meta .name { font-weight: 700; }
+  .stars { color: #E9A13B; font-size: 15px; letter-spacing: 2px; }
+  .testi-quote { font-size: 15px; color: #555555; }
+  .slot-note {
+    background: #FFF6E5; border: 1px solid #E9A13B; border-radius: 8px;
+    padding: 14px; font-size: 14px; color: #7A5A16; margin-bottom: 26px;
+  }
+
+  /* ===== Pricing ===== */
+  .pricing-box {
+    background: #FAF7F2; border: 2px solid #0B6E4F; border-radius: 12px;
+    padding: 24px 20px; margin: 0 0 10px; text-align: center;
+  }
+  .price-old { font-size: 18px; color: #8A7E6A; text-decoration: line-through; }
+  .price-new { font-size: 34px; font-weight: 700; color: #0B6E4F; margin: 4px 0; }
+  .scarcity { font-size: 14px; color: #7A5A16; background: #FFF6E5; border-radius: 8px; padding: 10px 14px; margin-bottom: 8px; }
+
+  /* ===== Bonus stack ===== */
+  .bonus-grid { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 28px; }
+  .bonus-col { flex: 1 1 260px; min-width: 240px; }
+  .bonus-col h3 { font-size: 18px; margin-bottom: 8px; }
+
+  /* ===== Guarantee ===== */
+  .guarantee-box {
+    background: #F0F7F4; border-left: 6px solid #0B6E4F; border-radius: 8px;
+    padding: 20px 18px; margin-bottom: 10px;
+  }
+
+  /* ===== Footer ===== */
+  .footer { border-top: 1px solid #E5DED2; margin-top: 44px; padding: 22px 0 34px; text-align: center; font-size: 13px; color: #666666; }
+
+  @media (max-width: 600px) {
+    .headline-block h1 { font-size: 24px; }
+    .price-new { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== SECTION 1: HEADER BANNER (real brand, real tagline) ===== -->
+<div class="banner">
+  <div class="brand">Career Talk With Chidinma</div>
+  <div class="tagline">No. 1 Digital Income Blog in Africa</div>
+</div>
+
+<div class="page">
+
+  <!-- ===== SECTION 2: STORY HEADLINE + REAL ATTRIBUTION ===== -->
+  <!-- NOTE: Publish only names, dates and details that are true for you.
+       If Adaeze is a composite, attribute the page to yourself (Chidinma) instead. -->
+  <div class="headline-block">
+    <h1>Leicester Care Assistant Reveals How She Rebuilt Her Career Identity in 21 Days, Even After Moving Abroad Made Her Feel Like Nobody</h1>
+    <div class="byline">Thursday, 30 October 2026 &middot; by Adaeze Okonkwo, Leicester, UK</div>
+  </div>
+
+  <!-- ===== SECTION 3: HERO IMAGE ===== -->
+  <!-- HERO IMAGE: real photo of the person behind the story -->
+  <div style="text-align:center; margin: 10px 0 24px;">
+    <img src="https://career-talk-with-chidinma.lovable.app/__l5e/assets-v1/1d3b34fb-60e9-4e42-ae63-71cfb4068a20/hero.png" alt="The woman behind this story" width="260" style="display:inline-block; width:260px; max-width:100%; height:auto; border-radius:8px;">
+  </div>
+
+  <!-- ===== SECTION 4: OPENING HOOK ===== -->
+  <p>It&rsquo;s 2am and you&rsquo;re awake again.</p>
+  <p>The house is quiet. Your shift finished hours ago, your body still runs on night-shift time, and everyone who could talk to you is asleep. So you do the thing you&rsquo;d never do in daylight. You pick up your phone and search: <em>&ldquo;did I make a mistake moving abroad?&rdquo;</em></p>
+  <p>Back home, you had a title. A team. A desk with your name on it. People stood up when you walked into the room, and your opinion actually moved things.</p>
+  <p>Now you wipe strangers. Or scan parcels. Or stack shelves at hours your former colleagues back in Lagos, Abuja or Port Harcourt would not believe. Nobody here knows you ever managed anything.</p>
+  <p>Online, you post the good parts. The snow. The new phone. The Sunday rice that actually tasted like home. The timeline looks fine.</p>
+  <p>But your mother tells her friends you&rsquo;re &ldquo;doing well abroad,&rdquo; and you haven&rsquo;t corrected her. <em>Not yet. Maybe not ever.</em></p>
+  <p>You&rsquo;ve applied to dozens of jobs. You&rsquo;ve rewritten your CV more times than you can count. A handful of replies, a couple of interviews, nothing that sees who you actually are.</p>
+  <p>You&rsquo;ve tried the WhatsApp groups. Plenty of sympathy, plenty of gossip, no path. You&rsquo;ve watched the motivational videos &mdash; the feeling lasts until morning, then the alarm goes off and it&rsquo;s the same shift again.</p>
+  <p>And the heaviest part is not the work. It&rsquo;s the quiet belief that you&rsquo;re the only one this happened to. That everyone else Japa&rsquo;d and landed softly, and you alone fell.</p>
+  <p>You&rsquo;re not the only one. And it&rsquo;s not because you&rsquo;re lazy, or because you made one wrong decision. Something specific happened to your identity when you moved &mdash; and something specific can rebuild it.</p>
+  <p>Here&rsquo;s what changed it for me.</p>
+
+  <!-- ===== SECTION 5: THE PROMISE ===== -->
+  <p class="promise">In the next few minutes, I&rsquo;m going to show you the exact 21-day plan that pulled me out of that 2am spiral &mdash; about 30 minutes a day &mdash; and how you can run the same system for yourself.</p>
+
+  <!-- ===== SECTION 6: YOUR REAL STORY ===== -->
+  <!-- NOTE: This story is written in Adaeze's voice per your brief. Before publishing,
+       adjust every detail to what is actually true for you (or attribute the page to
+       yourself). Do not publish people, quotes or events that didn't happen. -->
+  <h2 style="font-size:24px; margin: 0 0 20px;">My story &mdash; the honest version</h2>
+
+  <p>Four years ago in Lagos, I was a banking officer. I had a team of six reporting to me, a corner desk, and customers who asked for me by name. <strong>Mrs Okonkwo</strong>. I knew my numbers, I knew my people, and I knew exactly who I was.</p>
+  <p>Then we relocated to the UK &mdash; my husband&rsquo;s job moved us, and honestly, we wanted our daughter to grow up with options we never had. I told everyone it was the right decision. I believed it too.</p>
+  <p>What I didn&rsquo;t plan for was this: in Leicester, with a Nigerian banking CV that recruiters here treated like a foreign document, the only role that came back to me was <strong>care assistant, night shifts</strong>.</p>
+  <p>I took it. Rent doesn&rsquo;t negotiate.</p>
+  <p>The first month, I told myself it was temporary. The second month, I stopped talking at dinner. By the third, I had mastered the art of the reassuring Sunday message home &mdash; photos of me smiling, carefully cropped so you couldn&rsquo;t see the staff room behind me. My mother told everyone her daughter was &ldquo;doing well abroad.&rdquo; <em>I never corrected her.</em></p>
+  <p>The real cost wasn&rsquo;t the sore feet. It was smaller than that and heavier. It was going silent with my own family. It was declining calls from Lagos colleagues because I couldn&rsquo;t bear the question <em>&ldquo;so how is work over there?&rdquo;</em> It was standing in a resident&rsquo;s room at 3am, doing work that matters &mdash; I want to be clear, care work matters &mdash; while feeling like the person who once signed off six people&rsquo;s work had been deleted.</p>
+  <p>So I did what a responsible adult does. I fixed my CV and applied again.</p>
+  <p><strong>Rewrite number one</strong> used my real Lagos titles. Nothing. <strong>Rewrite number four</strong> added UK keywords I copied from advice videos. Two replies, both rejecting me. By <strong>rewrite number ten</strong>, I had stripped so much of my actual experience that the CV described a stranger &mdash; and it still didn&rsquo;t work. I was applying through every board and recruiter I could find, dozens of applications, and the silence was answering a question I didn&rsquo;t want to hear: <em>maybe my Nigerian experience counts for nothing here.</em></p>
+  <p>I tried the Naija WhatsApp groups next. You know exactly how those go &mdash; real warmth, real prayer, and absolutely no plan. Sympathy in the morning, gossip by evening, and nobody who had actually climbed out.</p>
+  <p>Then motivation. YouTube at 2am, Instagram reels on the bus. &ldquo;Your time is coming.&rdquo; It always wore off by the next shift. You can&rsquo;t motivate your way out of a structural problem.</p>
+  <p>And then the part I almost don&rsquo;t want to write: I paid for a course. <strong>&pound;20 &mdash; about &pound;35,000 in the money I used to earn.</strong> A generic &ldquo;UK career success&rdquo; course. It told me to network confidently and believe in myself. It never once mentioned what it&rsquo;s like when your five years of management happened in Lagos and the recruiter reading your CV has never heard of your bank. It wasn&rsquo;t written for me. I finished it feeling the same, minus twenty pounds.</p>
+  <p>So I did the most dangerous thing of all: nothing. I stayed quiet and told myself <em>&ldquo;it&rsquo;s only for now.&rdquo;</em> For months, that sentence did the job of a plan.</p>
+  <p><strong>The turning point was a 2am search.</strong> After a night shift, sitting on the edge of my bed so I wouldn&rsquo;t wake anyone, I finally typed the question properly &mdash; not &ldquo;how to get a UK job&rdquo; this time, but something closer to the truth: <em>&ldquo;why do I feel like nobody after moving abroad?&rdquo;</em></p>
+  <p>What I found wasn&rsquo;t motivation. It was clinical language for what had happened to me. Researchers have names for it: <strong>identity disruption</strong>, <strong>status loss</strong>, <strong>acculturative stress</strong>. Reading those pages was the first time in two years something had described my situation exactly &mdash; not the generic &ldquo;expat&rdquo; story, the Nigerian one. The move hadn&rsquo;t just changed my address. It had cut me off from the roles, evidence and recognition that my sense of self was built on.</p>
+  <p>And then the sentence that changed everything: <strong>you are not starting from zero.</strong> My problem wasn&rsquo;t that my experience was worthless. It was that my experience had never been <em>translated</em> &mdash; into language, evidence and stories that employers here recognise.</p>
+  <p>So I stopped applying for two weeks and started building instead. I went back through my Lagos career and listed <strong>ten real achievements</strong> &mdash; the portfolio I cleaned up, the process I fixed, the team I trained &mdash; and for each one, I wrote a single line an employer here could actually use. That exercise took 30 minutes on a Tuesday, and it did more for my head than two years of reassurance. For the first time since landing, I could <em>see</em> what I was worth, in writing, in front of me.</p>
+  <p>Over the following weeks I turned that into a routine. <strong>Days 1&ndash;5:</strong> name the real loss, separate my status from my worth, and build that proof sheet. <strong>Days 6&ndash;16:</strong> translate my CV properly &mdash; Nigerian titles mapped to UK, US and Canada equivalents &mdash; and map a three-rung bridge: the survival job I had, the bridge role one step up, and the target role I actually deserve. I wrote myself scripts for the questions that used to shrink me: <em>&ldquo;so what do you do?&rdquo;</em>, networking messages, and the hardest one &mdash; what to tell my family.</p>
+  <p><strong>My husband noticed before I told him.</strong> He said I&rsquo;d stopped going silent after night shifts and kept talking about &ldquo;the plan&rdquo; at dinner. Then my mother. On our weekly video call, I finally told her the truth about my job. I had rehearsed it like an apology. She said, <em>&ldquo;Ah-ah, is that why you&rsquo;ve been looking tired? Thank God you told me.&rdquo;</em> Relief &mdash; not disappointment. I cried in the kitchen after that call, and it wasn&rsquo;t the sad kind.</p>
+  <p>Let me be honest about what this did and didn&rsquo;t do. It did not magic a job offer into my inbox, and I won&rsquo;t pretend otherwise. What it did was give me something I hadn&rsquo;t had since I landed: a <strong>clear, concrete path</strong>, a CV that reads like a professional instead of an apology, conversations I could hold my head up in, and the evenings of my life back from the 2am spiral.</p>
+  <p>When the women in my community started asking me &mdash; the delivery driver who used to engineer, the warehouse supervisor who used to run a school &mdash; I found myself typing the same steps into WhatsApp again and again. Eventually I sat down and turned my notes into one document, in plain language, for people with our exact background.</p>
+  <p>I&rsquo;m not a guru and I&rsquo;m not a coach. I&rsquo;m a night-shift care assistant in Leicester who found a method that worked on one very stubborn case: mine. What follows is that method, written down so you don&rsquo;t have to spend two years finding it.</p>
+
+  <!-- ===== SECTION 7: PRODUCT REVEAL ===== -->
+  <p style="text-align:center; font-size:18px; margin: 34px 0 8px;">I packaged everything into one guide:</p>
+  <h2 style="text-align:center; font-size:30px; margin-bottom: 6px;">The Identity Reset Protocol</h2>
+  <p style="text-align:center; color:#555555; margin-bottom: 30px;">A 21-Day Evidence-Based System to Recover from Status Loss and Rebuild Your Career Abroad</p>
+
+  <!-- ===== SECTION 8: PRODUCT MOCKUP ===== -->
+  <!-- PRODUCT MOCKUP IMAGE: real guide cover -->
+  <div style="text-align:center; margin-bottom: 30px;">
+    <img src="https://career-talk-with-chidinma.lovable.app/__l5e/assets-v1/755dae85-83c5-4bd8-82ba-24a647801a94/identity-reset-protocol-cover.png" alt="The Identity Reset Protocol — guide cover" width="340" style="display:inline-block; width:340px; max-width:100%; height:auto; border-radius:8px;">
+  </div>
+
+  <!-- ===== SECTION 9: WHAT'S INSIDE ===== -->
+  <h2 style="font-size:24px; margin-bottom: 16px;">Inside the guide, you&rsquo;ll find:</h2>
+  <ul class="contents">
+    <li><strong>The &ldquo;Who I Was&rdquo; Proof Sheet &amp; Identity Audit</strong> &mdash; name the real loss and see your actual worth, in your first 30 minutes. Ten home-country achievements, each translated into one employer-ready line. <em>(Pg. 3)</em></li>
+    <li><strong>The CV Translation Guide</strong> &mdash; Nigerian titles and achievements mapped to UK, US and Canada equivalents, so your CV finally reads like the professional you are. <em>(Pg. 9)</em></li>
+    <li><strong>The Career Bridge Planner</strong> &mdash; a 3-rung tracker from your survival job, to a bridge role, to the role you actually deserve. <em>(Pg. 14)</em></li>
+    <li><strong>The Conversation Scripts</strong> &mdash; exact words for &ldquo;So what do you do?&rdquo;, for networking messages, and for the calls home. <em>(Pg. 19)</em></li>
+    <li><strong>The Daily Win Tracker &amp; 2am Reset Card</strong> &mdash; built for the nights the doubt actually hits, not the nights you feel inspired. <em>(Pg. 25)</em></li>
+    <li><strong>The Maintain Plan</strong> &mdash; a simple weekly rhythm, small-win tracking, and a low-motivation plan, so the reset doesn&rsquo;t fade after 21 days. <em>(Pg. 28)</em></li>
+  </ul>
+  <p style="font-size:14px; color:#666666;">Page numbers are placeholders &mdash; they&rsquo;ll be finalised once the PDF is laid out. No job offer is promised: this guide gives you a clear, concrete path, not a miracle.</p>
+
+  <!-- ===== SECTION 10: TESTIMONIAL SLOTS ===== -->
+  <!-- Testimonial slots — replace with real customer feedback before publishing.
+       Do not fill with invented quotes. -->
+  <h2 style="font-size:24px; margin: 36px 0 16px;">What readers say</h2>
+  <div class="slot-note">These slots are empty on purpose. Before launch, replace them with real feedback from early readers &mdash; ask your first buyers for two honest sentences. If you don&rsquo;t have at least 2&ndash;3 real testimonials yet, it&rsquo;s better to collect them than to invent them.</div>
+
+  <div class="testi-card">
+    <div class="testi-head">
+      <div class="avatar">AO</div>
+      <div class="testi-meta"><span class="name">[NAME]</span> &middot; [CITY, COUNTRY]</div>
+    </div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p class="testi-quote">[INSERT REAL CUSTOMER QUOTE HERE]</p>
+  </div>
+
+  <div class="testi-card">
+    <div class="testi-head">
+      <div class="avatar">--</div>
+      <div class="testi-meta"><span class="name">[NAME]</span> &middot; [CITY, COUNTRY]</div>
+    </div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p class="testi-quote">[INSERT REAL CUSTOMER QUOTE HERE]</p>
+  </div>
+
+  <div class="testi-card">
+    <div class="testi-head">
+      <div class="avatar">--</div>
+      <div class="testi-meta"><span class="name">[NAME]</span> &middot; [CITY, COUNTRY]</div>
+    </div>
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <p class="testi-quote">[INSERT REAL CUSTOMER QUOTE HERE]</p>
+  </div>
+
+  <!-- ===== SECTION 11: PRICING ===== -->
+  <h2 style="font-size:24px; margin: 36px 0 16px;">What it costs</h2>
+  <p>Here&rsquo;s what you&rsquo;re getting: the complete 21-day Identity Reset Protocol &mdash; the Proof Sheet, the CV Translation Guide, the Career Bridge Planner, the Conversation Scripts, the Daily Win Tracker and 2am Reset Card, and the Maintain Plan &mdash; plus the two bonuses below. Everything in plain language, written for Nigerians rebuilding abroad, about 30 minutes a day.</p>
+  <p>Compare that with what the vague stuff costs. I paid &pound;20 for a generic course that never mentioned my background. One rewrite-and-apply cycle costs you weeks and weeks of silence. This guide costs less than one takeaway order &mdash; and it&rsquo;s the honest version, with no job offer promised, only a clear path.</p>
+
+  <div class="pricing-box">
+    <div class="price-old">&#8358;9,800 &nbsp;/&nbsp; $9.97</div>
+    <div class="price-new">&#8358;4,800 &nbsp;/&nbsp; $3.30</div>
+    <p style="font-size:14px; color:#555555; margin:0;">One-time payment &middot; instant PDF download</p>
+  </div>
+  <p class="scarcity" style="text-align:center;">The first 30 people paying right now get the guide at &#8358;4,800 / $3.30. After that, the price returns to &#8358;9,800 / $9.97.</p>
+  <!-- NOTE: confirm your checkout (Selar or similar) accepts GBP/USD/CAD cards before publishing. -->
+
+  <!-- ===== SECTION 12: FIRST CTA ===== -->
+  <!-- Replace # with your real checkout URL (e.g. your Selar payment link). -->
+  <a class="cta-btn" href="https://selar.com/33113qhd67" target="_blank" rel="noopener">YES &mdash; I Want The Identity Reset Protocol at &#8358;4,800 / $3.30</a>
+  <p class="cta-note">Instant download &middot; secure checkout</p>
+
+  <!-- ===== SECTION 13: BONUS STACK ===== -->
+  <h2 style="font-size:24px; margin: 20px 0 16px;">Two bonuses, included free</h2>
+  <p>These aren&rsquo;t padding. They cover the two conversations this journey actually gets hard at: strangers asking what you do, and family asking how you are.</p>
+
+  <div class="bonus-grid">
+    <!-- COMBINED MOCKUP IMAGE: guide + both bonuses -->
+    <div style="flex: 1 1 100%; text-align:center; margin-bottom: 10px;">
+      <img src="https://career-talk-with-chidinma.lovable.app/__l5e/assets-v1/390b361a-bbbe-4fa5-8d8c-beaba9bd4724/bundle-mockup.png" alt="The Identity Reset Protocol + both bonus covers" style="display:inline-block; width:720px; max-width:100%; height:auto; border-radius:8px;">
+    </div>
+    <div class="bonus-col">
+      <!-- INSERT BONUS 1 MOCKUP: real cover/graphic for the Script Pack -->
+      <div style="text-align:center;"><img src="https://career-talk-with-chidinma.lovable.app/__l5e/assets-v1/d03cae4c-fa38-4be3-957b-83393d642d2e/what-do-you-do-script-pack.png" alt="The “What Do You Do?” Script Pack — cover" width="300" style="display:inline-block; width:300px; max-width:100%; height:auto; border-radius:8px;"></div>
+      <h3>Bonus 1: The &ldquo;What Do You Do?&rdquo; Script Pack</h3>
+      <p>Ready-to-use answers for the question that makes you shrink, plus LinkedIn and WhatsApp networking messages you can send tonight &mdash; written for our accent, our names and our reality.</p>
+    </div>
+    <div class="bonus-col">
+      <!-- INSERT BONUS 2 MOCKUP: real cover/graphic for the Family Truth Script -->
+      <div style="text-align:center;"><img src="https://career-talk-with-chidinma.lovable.app/__l5e/assets-v1/c6a2c774-bfaf-4f46-ae58-ca1a7a022c7e/family-truth-script.png" alt="The Family Truth Script — cover" width="300" style="display:inline-block; width:300px; max-width:100%; height:auto; border-radius:8px;"></div>
+      <h3>Bonus 2: The Family Truth Script</h3>
+      <p>Gentle, practical words for telling your mother or your family the real situation &mdash; without shame, and without the 2am rehearsal. Relief, not disappointment, is the usual reaction.</p>
+    </div>
+    <!-- INSERT BUNDLE IMAGE: one combined graphic showing guide + both bonuses -->
+  </div>
+
+  <!-- ===== SECTION 14: SECOND CTA ===== -->
+  <a class="cta-btn" href="https://selar.com/33113qhd67" target="_blank" rel="noopener">YES &mdash; Send Me The Guide + The 2 Bonuses at &#8358;4,800 / $3.30</a>
+  <p class="cta-note">Both bonuses are inside the same download &middot; no extra payment</p>
+
+  <!-- ===== SECTION 15: GUARANTEE ===== -->
+  <h2 style="font-size:24px; margin: 20px 0 16px;">The 72-hour proof guarantee</h2>
+  <div class="guarantee-box">
+    <p style="margin-bottom:10px;">Complete Days 1&ndash;3 of the protocol &mdash; that&rsquo;s about 30 minutes a day. If you don&rsquo;t have your finished <strong>&ldquo;Who I Was&rdquo; Proof Sheet</strong> and a <strong>stronger professional headline</strong> in hand by the end of it, email me within 72 hours of purchase and I&rsquo;ll refund every kobo and every cent. No forms, no interrogation.</p>
+    <p style="margin:0;"><em>I can&rsquo;t honestly guarantee you a job offer in 21 days &mdash; nobody can. What I can guarantee is that the first three days will produce real, visible proof you are not starting from zero.</em></p>
+  </div>
+
+  <a class="cta-btn" href="https://selar.com/33113qhd67" target="_blank" rel="noopener">START DAY 1 NOW &mdash; RISK FREE FOR 72 HOURS</a>
+
+  <!-- ===== SECTION 16: SECOND TESTIMONIAL ROUND =====
+       Skipped on purpose: no additional real testimonials exist yet.
+       Add more real feedback here as it comes in — do not invent quotes. -->
+
+  <!-- ===== SECTION 17: CLOSING ===== -->
+  <h2 style="font-size:24px; margin: 26px 0 16px;">Where this leaves you</h2>
+  <p>You have two honest options, and both are fine.</p>
+  <p>One: close this page and keep going as you are. The shifts continue, the Sunday messages home continue, and the 2am searches continue. Maybe you&rsquo;ll piece a path together on your own eventually &mdash; I genuinely believe some people do. It took me about two years and a lot of expensive silence.</p>
+  <p>Two: give this three evenings. Tonight, tomorrow, the day after &mdash; about 30 minutes each. By Wednesday you&rsquo;ll be holding your own Proof Sheet: ten real achievements from your real career, each one translated into a line an employer here can actually use. That&rsquo;s not motivation. That&rsquo;s evidence, in your own hands, that you are not starting from zero.</p>
+  <p>I know exactly what it feels like to believe your best years are behind you at 33. I also know what it feels like to watch a list of your own accomplishments appear on a screen in your dark kitchen at 1am and think, <em>&ldquo;wait &mdash; I&rsquo;m still her.&rdquo;</em></p>
+  <p>That person is still in you. The protocol just helps you prove it &mdash; first to yourself, then to employers, then, gently, to the people back home who are waiting to be proud of the truth, not the story.</p>
+
+  <!-- ===== SECTION 18: FINAL CTA ===== -->
+  <a class="cta-btn" href="https://selar.com/33113qhd67" target="_blank" rel="noopener">GET THE IDENTITY RESET PROTOCOL &mdash; &#8358;4,800 / $3.30</a>
+  <p class="cta-note">First 30 buyers only at this price &middot; 72-hour proof guarantee</p>
+
+  <div class="footer">
+    <strong style="color:#0B6E4F;">Career Talk With Chidinma</strong><br>
+    No. 1 Digital Income Blog in Africa<br><br>
+    Questions before you buy? Reach us on WhatsApp or Instagram &mdash; we reply.<br>
+    &copy; 2026 Career Talk With Chidinma. All rights reserved.
+  </div>
+
+</div>
+</body>
+</html>
